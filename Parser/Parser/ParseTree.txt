@@ -1,0 +1,104 @@
+\- root
+  \- <Program>
+    \- <Definition>
+      \- <Function_Definition>
+        |- <DataType>
+        | \- int
+        |- <Function_Header>
+        | |- <Identifier>
+        | | \- main
+        | \- <Parameter_List>
+        |   |- (
+        |   \- )
+        \- <Function_Body>
+          |- {
+          |- <Statement_List>
+          | |- <Statement>
+          | | |- <Expression_Call>
+          | | | |- <Unary_Expression>
+          | | | | \- <Primary>
+          | | | |   \- <Identifier>
+          | | | |     \- x
+          | | | \- <Expression>
+          | | |   |- =
+          | | |   \- <Expression_Call>
+          | | |     \- <Unary_Expression>
+          | | |       \- <Primary>
+          | | |         \- <Constant>
+          | | |           \- 1
+          | | \- ;
+          | \- <Statement_List>
+          |   |- <Statement>
+          |   | |- <Data_Definition>
+          |   | | |- <DataType>
+          |   | | | \- int
+          |   | | \- <Expression_Call>
+          |   | |   |- <Unary_Expression>
+          |   | |   | \- <Primary>
+          |   | |   |   \- <Identifier>
+          |   | |   |     \- x
+          |   | |   \- <Expression>
+          |   | |     |- =
+          |   | |     \- <Expression_Call>
+          |   | |       \- <Unary_Expression>
+          |   | |         \- <Primary>
+          |   | |           \- <Identifier>
+          |   | |             \- y
+          |   | \- ;
+          |   \- <Statement_List>
+          |     \- <Statement>
+          |       |- for
+          |       |- (
+          |       |- <Data_Definition>
+          |       | |- <DataType>
+          |       | | \- int
+          |       | \- <Expression_Call>
+          |       |   |- <Unary_Expression>
+          |       |   | \- <Primary>
+          |       |   |   \- <Identifier>
+          |       |   |     \- i
+          |       |   \- <Expression>
+          |       |     |- =
+          |       |     \- <Expression_Call>
+          |       |       \- <Unary_Expression>
+          |       |         \- <Primary>
+          |       |           \- <Constant>
+          |       |             \- 1
+          |       |- ;
+          |       |- <Expression_Call>
+          |       | |- <Unary_Expression>
+          |       | | \- <Primary>
+          |       | |   \- <Identifier>
+          |       | |     \- i
+          |       | \- <Expression>
+          |       |   |- <
+          |       |   \- <Expression_Call>
+          |       |     \- <Unary_Expression>
+          |       |       \- <Primary>
+          |       |         \- <Constant>
+          |       |           \- 10
+          |       |- ;
+          |       |- <Expression_Call>
+          |       | \- <Unary_Expression>
+          |       |   |- ++
+          |       |   \- <Identifier>
+          |       |     \- i
+          |       |- )
+          |       |- {
+          |       |- <Statement_List>
+          |       | \- <Statement>
+          |       |   |- <Expression_Call>
+          |       |   | |- <Unary_Expression>
+          |       |   | | \- <Primary>
+          |       |   | |   \- <Identifier>
+          |       |   | |     \- cout
+          |       |   | \- <Expression>
+          |       |   |   |- <<
+          |       |   |   \- <Expression_Call>
+          |       |   |     \- <Unary_Expression>
+          |       |   |       \- <Primary>
+          |       |   |         \- <Identifier>
+          |       |   |           \- pajamas
+          |       |   \- ;
+          |       \- }
+          \- }

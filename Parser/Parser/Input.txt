@@ -1,0 +1,7 @@
+int main(){
+	x = 1;
+	int x = y;
+	for(int i = 1; i < 10; ++i){
+		cout << pajamas;
+	}
+}

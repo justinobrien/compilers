@@ -1,0 +1,22 @@
+#define MAX 10
+#define MIN 0
+
+// comment name
+
+
+
+int main(void)
+{
+	int test = MAX + 5;
+	test += 20;
+	while(test > MIN){
+		test = test + 1;
+		test = test - 2;
+	}
+	for( int i = test; i > 0; --i ){
+		cout << i / 1;
+	}
+	// random comment 
+	int cat = test;
+	return cat;
+}

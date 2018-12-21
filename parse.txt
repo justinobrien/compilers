@@ -1,0 +1,111 @@
+#define YEARS 12
+#define MIN 0
+
+// Ryan Kennell
+// CST 116 Assignment 3
+// Nov, 10, 2013
+
+void displaymenu(double principal, double rate, double monthlypay, int years)
+{
+
+	cout << "\n\nLoan Calculator \n---------------\n\n"
+		 << "\t Monthly Payment  :  $";
+		 
+	if (principal && rate && years != 0)
+		 {
+			 cout << monthlypay ;
+			 
+		 }
+	cout << "\n\n";
+	cout << "  1. Set principal\t  :  $" << principal << "\n";
+	cout << "  2. Set annual interest  :  " << rate << "%\n";
+	cout << "  3. Set number of Years  :  " << years << "\n";
+	cout << "  4. Amortization schedule \n";
+	cout << "  5. Exit \n\n";
+
+}
+
+void printSchedule(double balance, double interestRate, double monthlypay, int yearsNum)
+{
+	unsigned monthNum = 1;
+	double amtPrincipal;
+	double amtInterest;
+	double totalPaid = 0;
+		
+	while( balance -.01 > 0 )
+	{
+		
+		getValues(amtInterest, balance, interestRate, amtPrincipal, monthlyPay);
+
+		displayMonth(monthNum, amtPrincipal, amtInterest, balance);
+
+		totalPaid+= monthlyPay;
+
+		++monthNum;
+		
+	}
+
+	cout << "\nTotal Paid:  $" << totalPaid << "\n";
+
+}
+
+int getValues(double amtInterest, double balance, double interestRate, double amtPrincipal, double monthlyPay)
+{
+	amtInterest = balance * interestRate * .01 / 12;
+	amtPrincipal = monthlyPay - amtInterest;
+	balance -= amtPrincipal;
+
+	return balance;
+}
+
+int main()
+{
+	double principal = 0;
+	double annualRate = 0.00;
+	int yearsNum = 0;
+	double monthpay = 0;
+	int listValue;
+	int monthNum = yearsNum * YEARS;
+	bool quit = false;
+
+	displaymenu(principal, annualRate, monthpay, yearsNum);
+
+	cout << "Enter Choice : ";
+		cin >> listValue;
+		cout << "\n";
+
+	while(quit != true)
+	{
+		switch(listValue)
+		{
+			case 1	:	cout << "Enter principal: ";
+						cin >> principal; 
+						break;
+			case 2	:	cout << "Enter annual interest rate: ";
+						cin >> annualRate; 
+						break;
+
+			case 3	:	cout << "Enter number of years: ";
+						cin >> yearsNum; 
+						break;
+
+			case 4	:	printSchedule(principal, annualRate, monthpay, yearsNum);
+						break;
+
+			case 5	:	quit = true;
+		}
+	}
+
+	int value;
+	while(test > MIN){
+		test = test + 1;
+		test = test - 2;
+	}
+	for( int i = test; i > 0; --i )
+	{
+		cout << "Car";
+	}
+	// random comment 
+	int cat = test;
+	return cat;
+}
